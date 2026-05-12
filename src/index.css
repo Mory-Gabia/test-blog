@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  img {
+    @apply max-w-full;
+  }
+
+  /* overflow-wrap for long words/URLs */
+  p,
+  li,
+  td {
+    overflow-wrap: anywhere;
+  }
+}

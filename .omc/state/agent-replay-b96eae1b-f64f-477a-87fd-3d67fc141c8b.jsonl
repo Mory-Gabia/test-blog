@@ -1,0 +1,5 @@
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:autopilot"}
+{"t":0,"agent":"aee88d9","agent_type":"analyst","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a5f9dd4","agent_type":"architect","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a5f9dd4","agent_type":"architect","event":"agent_stop","success":true,"duration_ms":95197}
+{"t":0,"agent":"aee88d9","agent_type":"analyst","event":"agent_stop","success":true,"duration_ms":106277}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"npm run build 2>&1\",\"timeout\":60000,\"description\":\"Build production bundle\"}",
+  "error": "Exit code 2\n\n> react-blog@0.1.0 build\n> tsc -b && vite build\n\nvite.config.ts(5,13): error TS2769: No overload matches this call.\n  The last overload gave the following error.\n    Type 'Plugin<any>[]' is not assignable to type 'PluginOption'.\n      Type 'Plugin<any>[]' is not assignable to type 'PluginOption[]'.\n        Type 'Plugin<any>' is not assignable to type 'PluginOption'.\n          Type 'import(\"/Users/mory/Documents/work/test-mory/node_modules/vite/dist/node/index\").Plugin<any>' is not a...",
+  "timestamp": "2026-05-12T02:07:19.423Z",
+  "retry_count": 6
+}
