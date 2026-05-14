@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { Container } from '../components/layout/Container'
 import { PostContent } from '../components/post/PostContent'
@@ -19,10 +19,11 @@ export default function PostPage() {
   const { markAsRead } = useUiStore()
   const [confirmOpen, setConfirmOpen] = useState(false)
 
-  if (!post) return <NotFoundPage />
+  useEffect(() => {
+    if (post) markAsRead(post.id)
+  }, [post?.id])
 
-  // mark as read
-  markAsRead(post.id)
+  if (!post) return <NotFoundPage />
 
   function handleDelete() {
     if (!post) return
